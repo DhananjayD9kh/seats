@@ -1,0 +1,34 @@
+<form FormGroup="SeatsForm" #usersForm="" (ngSubmit)="getUserFormData(SeatsForm.value)">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <div class="bg-white rounded-lg shadow-sm p-5">
+                    
+  
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+  
+                        <!-- Login info-->
+                        <div id="nav-tab-card" class="tab-pane fade show active">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="seats">No. of Seats</label>
+                                    <input type="number" name="seats" ng-model formControlName="seats" placeholder="Enter No. of Seats" required class="form-control">
+                                </div>
+                                <span style="color: red;" *ngIf="seats_valid && seats_valid.invalid && seats_valid.touched">Enter Valid No. of Seats</span>
+                               
+                                <div class="row">
+  
+                                    <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm">Proceed to Payment</button>
+  
+                                </div>
+                            </form>
+                          </div>
+                      </div>    
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+  
+  </form>
+                                <!-- End -->
